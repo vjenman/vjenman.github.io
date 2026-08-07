@@ -1,7 +1,7 @@
-<head>
-<style>
-body {
-  background-color: lightblue;
+header {
+background-color: lightblue
+font-family: Tahoma, Verdana, sans-serif;
 }
-</style>
-</head>
+p {
+  font-family: Tahoma, Verdana, sans-serif;
+}
