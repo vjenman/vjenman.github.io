@@ -3,6 +3,8 @@ article {
 head {
   background-color: rgb(178, 191, 237);
   font-family: Tahoma, Verdana, sans-serif;}
+body {
+  background-color: rgb(178, 191, 237);}
 p {
   font-family: Tahoma, Verdana, sans-serif;
   color: rgb(19, 24, 48);}
