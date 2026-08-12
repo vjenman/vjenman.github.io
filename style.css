@@ -9,11 +9,13 @@ p {
   font-family: Tahoma, Verdana, sans-serif;
   color: rgb(19, 24, 48);}
 .intro {
-  margin-left: 200px;
-  padding-top: 0px;}
+  margin-left: 480px;
+  padding-top: -100px;}
 h1 {
   font-family: Tahoma, Verdana, sans-serif;
-  color: rgb(19, 24, 48);}
+  color: rgb(19, 24, 48);
+  text-align: center;}
 .me {
   width: 250px;
-  height: 330px;}
+  height: 330px;
+  margin-left: 200px;}
