@@ -2,22 +2,97 @@ head {
   background-color: rgb(178, 191, 237);
   font-family: Tahoma, Verdana, sans-serif;}
 body {
-  background-color: rgb(178, 191, 237);}
+  background-color: rgb(178, 191, 237);
+  overflow-x: hidden;
+  min-height: 250vh;}
 p {
   font-family: Tahoma, Verdana, sans-serif;
   color: rgb(19, 24, 48);
-  font-size: 24px;
+  font-size: 25px;
   max-width: 800px;}
 .intro {
-  margin-left: 480px;
-  padding-top: -100px;}
+  position: absolute;
+  margin-left: 565px;
+  transform: translateY(-17px);
+  max-width: 420px;
+  position: absolute;}
 h1 {
-  padding-top: 50px;
+  padding-top: 25px;
   font-family: Tahoma, Verdana, sans-serif;
   color: rgb(19, 24, 48);
   text-align: center;
-  font-size: 30px;}
+  font-size: 42px;}
 .me {
-  width: 250px;
-  height: 330px;
-  margin-left: 200px;}
+  position: absolute;
+  width: 360px;
+  height: auto;
+  margin-left: 230px;
+  top: 100px;}
+.sun {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  left: -150px;
+  transform: translateY(-220px);
+  opacity: 0.62}
+.linkedin {
+  position: absolute;
+  width: 35px;
+  height: auto;
+  top: 325px;
+  left: 575px;}
+.email {
+  position: absolute;
+  width: 46px;
+  height: auto;
+  top: 323px;
+  left: 645px;}
+.phone {
+  position: absolute;
+  width: 35px;
+  height: auto;
+  top: 325px;
+  left: 725px;}
+.bird {
+  position: fixed;    
+  top: 40%;
+  left: -150px;
+  width: 200px;
+  height: auto;
+  z-index: 20;
+  will-change: transform;}
+.aboutlink {
+  font-family: Tahoma, Verdana, sans-serif;
+  color: rgb(19, 24, 48);
+  position: absolute;
+  font-size:26px;
+  left: 1035px;
+  top: 35px;}
+.resumelink {
+  font-family: Tahoma, Verdana, sans-serif;
+  color: rgb(19, 24, 48);
+  position: absolute;
+  font-size:26px;
+  left: 1135px;
+  top: 35px;}
+.mainpage {
+  font-family: Tahoma, Verdana, sans-serif;
+  color: rgb(19, 24, 48);
+  position: absolute;
+  font-size:26px;
+  left: 1035px;
+  top: 35px;}
+.mainpage2 {
+  font-family: Tahoma, Verdana, sans-serif;
+  color: rgb(19, 24, 48);
+  position: absolute;
+  font-size:26px;
+  left: 1035px;
+  top: 35px;}
+.aboutlink2 {
+  font-family: Tahoma, Verdana, sans-serif;
+  color: rgb(19, 24, 48);
+  position: absolute;
+  font-size:26px;
+  left: 1135px;
+  top: 35px;}
