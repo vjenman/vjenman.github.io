@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="elements/cherrytree.png">
+  <title>Vivian Jenman - Portfolio</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Link to External Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="sky-bg">
+
+  <div class="sun-decoration" aria-hidden="true">
+    <img src="elements/sun.png" alt="">
+  </div>
+
+  <!-- Top Right Navigation Buttons -->
+  <nav class="top-nav">
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="resume.html" class="nav-btn">Resume</a>
+  </nav>
+
+  <!-- Title / Profile Section -->
+  <header class="titlecard">
+    <div class="titlecontainer">
+      
+      <!-- 4x3 Vertical Image Container -->
+      <div class="profile-img-wrapper">
+        <img src="elements/headshot.png" 
+             alt="Vivian Jenman" 
+             class="profile-img">
+      </div>
+
+      <!-- Text & Contact Container -->
+      <div class="profile-info">
+        <!-- Top: Name -->
+        <div>
+          <h1 class="profile-name">Vivian Jenman</h1>
+          <!-- Middle: Description -->
+          <p class="profile-bio">
+            I'm a 3rd year Rotman Commerce student at the University of Toronto, studying marketing and data science.
+          </p>
+        </div>
+
+        <!-- Bottom: Contact Buttons -->
+        <div class="contact-buttons">
+          <a href="mailto:vjenman@gmail.com" aria-label="Email" class="contact-btn">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/vivian-jenman-52b7982a1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="contact-btn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <main class="projects-section">
+    <div class="projects-container">
+      
+      <h2 class="projects-title">Projects</h2>
+
+      <!-- 3x2 Grid (6 Projects Total) -->
+      <div class="projects-grid">
+
+        <!-- Project Card 1 -->
+        <a href="poster.html" class="project-card">
+          <div class="project-img-wrapper">
+            <img src="elements/rrposter.png" alt="Municipal Election Poster" class="project-imgrrposter">
+          </div>
+          <div class="project-title-bar">
+            <h3>Municipal Election Poster</h3>
+          </div>
+        </a>
+
+        <!-- Project Card 2 -->
+        <a href="beyondmeat.html" class="project-card">
+          <div class="project-img-wrapper">
+            <img src="elements/beyondmeat.png" alt="Beyond Meat class project" class="project-imgbeyondmeat">
+          </div>
+          <div class="project-title-bar">
+            <h3>Beyond Meat Class Project</h3>
+          </div>
+        </a>
+
+        <!-- Project Card 5 -->
+        <a href="video.html" class="project-card">
+          <div class="project-img-wrapper-video">
+            <!-- <img src="elements/rrvideo.mp4" alt="Rocket Riders video" class="project-img"> -->
+            <video autoplay loop muted playsinline width="100%" class="project-imgrrvideo">
+              <source src="elements/rrvideo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-title-bar">
+            <h3>Rocket Riders Video</h3>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Vivian Jenman</p>
+  </footer>
+
+  <!-- Link to External JavaScript -->
+  <script src="index.js"></script>
+</body>
+</html>
