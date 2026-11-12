@@ -10,8 +10,8 @@ body {
   color: #111827;
   background-color: #acc7e3; /* Light sky blue background */
   background-image:
-    radial-gradient(rgba(255, 255, 255, 0.12) 0.6px, transparent 0.05px),
-    radial-gradient(rgba(30, 58, 138, 0.04) 0.6px, transparent 0.05px);
+    radial-gradient(rgba(255, 207, 0, 0.12) 0.6px, transparent 0.05px),
+    radial-gradient(rgba(255, 207, 0, 0.04) 0.6px, transparent 0.05px);
   background-size: 3px 3px, 5px 5px;
   background-position: 0 0, 2px 2px;
   min-height: 100vh;
@@ -42,6 +42,7 @@ body {
   height: 200%;
   max-width: none;
   object-fit: cover;
+  transform: scale(1.6);
 }
 
 /* Top Right Navigation */
@@ -120,7 +121,6 @@ body {
 /* Title Section */
 .titlecard {
   position: relative;
-  z-index: 52;
   padding-top: 8rem;
   padding-bottom: 2rem;
   padding-left: 1.5rem;
@@ -194,6 +194,8 @@ body {
 }
 
 .profile-name {
+  position: relative;
+  z-index: 62;
   font-size: 3.75rem;
   font-weight: 800;
   color: #1e3a8a;
@@ -203,7 +205,7 @@ body {
 
 .profile-bio {
   color: #374151;
-  font-size: 1.375rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   max-width: 26rem;
 }
@@ -227,8 +229,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 52px;
+  height: 52px;
   background-color: #1e3a8a;
   color: #ffffff;
   border-radius: 0.5rem;
@@ -244,7 +246,7 @@ body {
 }
 
 .contact-btn i {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
 }
 
 /* Projects Section */
@@ -263,6 +265,8 @@ body {
 }
 
 .projects-title {
+  position: relative;
+  z-index: 62;
   font-size: 2.5rem;
   font-weight: 700;
   color: #1e3a8a;
@@ -395,32 +399,70 @@ body {
 
 /* Footer */
 .footer {
+  position: relative;
+  isolation: isolate;
+  margin-top: 13.25rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
   color: #edeef1;
   font-size: 0.875rem;
+  background: transparent;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  height: 14rem;
+  transform: translateY(0.75rem);
+  filter: drop-shadow(2px 2px 2px rgba(17, 24, 39, 0.25));
+  background-image:
+    url("elements/treegreen.png"),
+    url("elements/treegreen.png"),
+    url("elements/treegreen.png");
+  background-repeat: no-repeat;
+  background-position: left 1rem bottom, left 8.5rem bottom, right 1rem bottom;
+  background-size: 7rem auto, 4.5rem auto, 5.5rem auto;
+  pointer-events: none;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
   background-color: #5c875c;
   background-image:
     radial-gradient(rgba(255, 255, 255, 0.07) 0.6px, transparent 0.05px),
     radial-gradient(rgba(17, 24, 39, 0.02) 0.6px, transparent 0.05px);
   background-size: 3px 3px, 5px 5px;
   background-position: 0 0, 2px 2px;
+  pointer-events: none;
+}
+
+.footer > * {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* Resume PDF Viewer */
 .resume-section {
-  position: relative;
-  z-index: 1;
   width: min(100% - 3rem, 60rem);
   margin: 0 auto;
   padding: 8rem 0 3rem;
 }
 
 .resume-title {
+  position: relative;
+  z-index: 62;
   margin-bottom: 1.25rem;
   color: #1e3a8a;
-  font-size: 2rem;
+  font-size: 2.75rem;
   text-align: center;
 }
 
@@ -448,6 +490,35 @@ body {
 .resume-link a {
   color: #1e3a8a;
   font-weight: bold;
+}
+
+.beyondmeat-content {
+  display: flow-root;
+}
+
+.beyondmeat-viewer {
+  float: left;
+  width: 65%;
+  margin: 0 2rem 1rem 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid rgba(30, 58, 138, 0.25);
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(30, 58, 138, 0.18);
+}
+
+.beyondmeat-viewer iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.beyondmeat-description {
+  color: #374151;
+  font-size: 1.125rem;
+  line-height: 1.6;
 }
 
 .about-section {
@@ -507,6 +578,8 @@ body {
 }
 
 .social-feature-title {
+  position: relative;
+  z-index: 62;
   margin-bottom: 1.5rem;
   color: #1e3a8a;
   font-size: 2.75rem;
@@ -579,6 +652,16 @@ body {
   .resume-section {
     width: calc(100% - 1.5rem);
     padding-top: 7rem;
+  }
+
+  .beyondmeat-content {
+    display: block;
+  }
+
+  .beyondmeat-viewer {
+    float: none;
+    width: 100%;
+    margin: 0 0 1.5rem;
   }
 
   .about-section {
