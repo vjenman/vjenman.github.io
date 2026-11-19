@@ -6,3 +6,43 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 .eyebrow,.step-number{display:none}
 .site-footer{justify-content:center;align-items:center;text-align:center}
+.step h3{font-size:clamp(1.6rem,2.1vw,2.35rem)}
+.frame-swap[data-frame="1"] .figure-tag__dot{background:#f3ed33}
+.frame-swap[data-frame="2"] .figure-tag__dot{background:#81d66f}
+.frame-swap[data-frame="3"] .figure-tag__dot{background:#e38c2b}
+.frame-swap[data-frame="4"] .figure-tag__dot{background:#2b86e3}
+.frame-swap[data-frame="5"] .figure-tag__dot{background:#ee79b3}
+.frame-swap[data-frame="0"] .figure-tag{display:none}
+@media(max-width:1000px){.step h3{font-size:1.7rem}}
+@media(max-width:720px){.step h3{font-size:1.75rem}}
+.hero-intro{font-size:1.2rem}
+.step{min-height:60vh;padding:clamp(18px,2.5vw,40px) clamp(18px,3vw,48px)}
+.step:last-child{min-height:64vh}
+.step p{font-size:clamp(1.2rem,1.4vw,1.3rem)}
+.prose-block{padding-block:clamp(56px,7vw,112px)}
+.prose-block>p:not(.eyebrow){font-size:1.25rem}
+.inline-graphic__prose,.inline-graphic__prose p{font-size:1.25rem}
+.method-note p,.source-list p{font-size:1.15rem}
+.chapter-heading>p:last-child{font-size:1.2rem}
+p{font-size:1.15rem}
+.hero-deck{font-size:clamp(1.3rem,1.9vw,1.7rem)}
+@media(max-width:1000px){.step{min-height:54vh}}
+@media(max-width:720px){.step{min-height:47vh;padding:22px 18px;margin-bottom:4vh}.step:last-child{margin-bottom:0;min-height:44vh}.prose-block{padding-block:52px}}
+@media(min-width:721px){.hero{min-height:calc(80vh - var(--header));padding-bottom:clamp(20px,2vw,32px)}}
+#recreation.chapter-heading{padding-top:clamp(20px,2.5vw,36px);padding-bottom:12px}
+#recreation.chapter-heading h2{margin-top:0;margin-bottom:12px}
+#income.chapter-heading,#density.chapter-heading,#crime-type.chapter-heading,#synthesis.chapter-heading{padding-top:clamp(64px,6vw,80px);padding-bottom:12px}
+#income.chapter-heading h2,#density.chapter-heading h2,#crime-type.chapter-heading h2,#synthesis.chapter-heading h2{margin-top:0;margin-bottom:12px}
+#income-bars.inline-graphic{padding-top:clamp(24px,3vw,48px);padding-bottom:clamp(24px,3vw,48px)}
+#income-scatter.inline-graphic{padding-top:clamp(24px,3vw,48px)}
+#income-scatter .inline-graphic__heading h2{font-size:clamp(1.65rem,2.2vw,2.5rem)}
+p,p.eyebrow,.hero-intro,.chapter-heading>p:last-child,.step p,.step p.placeholder,.placeholder,.prose-block>p:not(.eyebrow),.inline-graphic__prose,.inline-graphic__prose p,.method-note p,.source-list p{color:#000}
+.hero{grid-template-rows:auto 1fr}
+.hero h1{grid-column:1/-1;font-size:clamp(3rem,6.5vw,6rem);margin:0 0 25px;white-space:normal}
+@media(max-width:720px){.hero h1{font-size:clamp(2.75rem,10vw,4rem);margin:0;text-align:center}}
+.hero{row-gap:16px;padding-top:clamp(24px,3vw,48px)}
+.hero h1{margin-bottom:14px}
+@media(max-width:720px){.hero h1{margin-bottom:0}}
+.scrolly--stacked .sticky-figure{gap:2px;padding:0}
+.stacked-figures figure{height:calc((100% - 2px)/2)}
+.stacked-figures figure figcaption{padding:2px 0}
