@@ -285,7 +285,7 @@ body {
   padding: 0.5rem 1.5rem;
 }
 
-/* 3x2 Grid */
+/* Three-column project grid */
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -364,6 +364,19 @@ body {
   object-fit: cover;
   transition: transform 0.3s ease;
   object-position: center 5%;
+}
+
+.project-imgtoronto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 52%;
+  transform: scale(1.55);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-imgtoronto {
+  transform: scale(1.60);
 }
 
 .project-imgbeyondmeat {
